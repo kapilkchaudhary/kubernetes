@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-test
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeSelector:
+    disktype: sata
+# you have to assign labels to nodes prior to run this yaml
+# this pod will reside in that node where you have given the labels disktype:sata
