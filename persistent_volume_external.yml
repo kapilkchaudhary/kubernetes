@@ -13,5 +13,5 @@ spec:
 
 
   nfs:
-    path: /nfsdata
+    path: /nfsdata/PV0
     server: 10.0.0.192
